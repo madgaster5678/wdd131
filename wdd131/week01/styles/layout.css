@@ -1,0 +1,45 @@
+body {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+}
+
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    background-color: beige;
+    min-height: 400px;
+}
+
+aside {
+    background-color: bisque;
+}
+
+header {
+    background-color: blue;
+    color:white;
+    min-height: 200px;
+    font-size: small;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+footer {
+    background-color: blue;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    background-color: black;
+    font-size: medium;
+}
