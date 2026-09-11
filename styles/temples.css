@@ -15,7 +15,18 @@ body {
     font-family: "Roboto", sans-serif;
 }
 
-header {
+.menu-hidden {
+	display: none;
+}
+
+#menu-button {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+	margin-left: auto;
+}
+
+header, footer {
     font-family: "Open Sans", sans-serif;
     background-color: var(--primary-color);
 	display: grid;
@@ -26,23 +37,50 @@ header {
     color: var(--secondary-color);
 }
 
+header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+footer {
+	text-align: center;
+}
+
 header,
 main {
 	margin: 0 auto;
 }
 
+main {
+	display: grid;
+	grid-template-columns: 1fr;
+	max-width: 1200px;
+	gap: 1rem;
+	margin-bottom: 1rem;
+	padding-top: 2rem;
+}
+
+
 h1 {
 	font-size: 2rem;
+	grid-column: 1/-1;
+	text-align: center;
 }
 
 nav {
 	background-color: var(--primary-color);
+	width: auto;
+	display: flex;
+	align-items: flex-end;
+	flex-direction: column;
 }
 
 nav ul {
 	list-style: none;
 	display: flex;
 	flex-direction: column;
+	width: 100%;
 }
 
 nav a {
@@ -62,4 +100,24 @@ nav a:hover {
 
 .active {
 	color: yellow;
+}
+
+figure {
+	border: 1px solid var(--primary-color);
+	padding: 10px;
+	border-radius: 10px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 10px;
+}
+
+figcaption {
+	font-weight: bold;
+	text-align: center;
+	background-color: var(--primary-color);
+	color: var(--secondary-color);
+	border-radius: 10px;
 }

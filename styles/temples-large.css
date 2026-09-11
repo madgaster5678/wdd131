@@ -11,4 +11,19 @@
 	nav a {
 		flex: 1 1 100%;
 	}
+	main {
+		grid-template-columns: 1fr 1fr 1fr;
+	}
+
+	#menu-button {
+		display: none;
+	}
+
+	.menu-hidden {
+		display: flex;
+	}
+
+	nav ul {
+		flex-direction: row;
+	}
 }
