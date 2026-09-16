@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Place Web Page</title>
+    <meta name="description" content="this web page is designed by ammon griner, and it's purpose is to help study responsive web page design.">
+    <meta name="author" content="Student; Ammon Griner">
+    <link rel="stylesheet" href="styles/places.css">
+    <script src="scripts/places.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Japan</h1>
+    </header>
+    <main>
+        <div class="hero">
+            <picture>
+                <source media="(min-width: 720px)" srcset="images/tokyo-and-mnt-fuji-large.webp">
+                <img src="images/tokyo-and-mnt-fuji-small.webp" alt="Tokyo and Mount Fuji">
+            </picture>
+        </div>
+        <section>
+            <h2>Data</h2>
+            <dl>
+                <dt>Area:</dt>
+                <dd>377,973 km<sup>2</sup></dd>
+                
+                <dt>Population:</dt>
+                <dd>122.3 million</dd>
+
+                <dt>Capital:</dt>
+                <dd>Tokyo</dd>
+
+                <dt>Languages:</dt>
+                <dd>Japanese</dd>
+
+                <dt>Currency:</dt>
+                <dd>Japanese Yen</dd>
+
+                <dt>Time Zone:</dt>
+                <dd>UTC + 9</dd>
+
+                <dt>Calling Code:</dt>
+                <dd>+81</dd>
+
+                <dt>Internet TLD:</dt>
+                <dd>.jp</dd>
+            </dl>
+        </section>
+        <section>
+            <div>
+                <h2>Weather</h2>
+            </div>
+            <dl>
+                <dt>Temperature:</dt>
+                <dd>5 &deg;C</dd>
+
+                <dt>Conditions:</dt>
+                <dd>Light rain</dd>
+                
+                <dt>Wind:</dt>
+                <dd>10 km/h</dd>
+                
+                <dt>Wind Chill:</dt>
+                <dd id="wind-chill">current wind chill based on speed and temp</dd>
+            </dl>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🐉 Ammon Griner 🐉 Tucson, Az</p>
+        <p><span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
