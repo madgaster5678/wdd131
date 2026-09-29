@@ -22,7 +22,6 @@ section p {
 
 figure {
     display: grid;
-    grid-template-columns: 2;
     justify-content: center;
 }
 
