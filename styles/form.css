@@ -64,7 +64,8 @@ textarea {
 }
 
 input[type="checkbox"] {
-    width: auto;
+    width: 20px;
+    height: 20px;
 }
 
 .features label, .features input {
