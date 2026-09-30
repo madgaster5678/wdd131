@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <meta name="description" content="this page is for the form application activity and is designed to help understand forms and how they work">
+    <meta name="author" content="Ammon Griner">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/form.css">
+    <script src="scripts/form.js" defer></script>
+</head>
+<body class="form">
+    <header>
+        <h1>Product Review</h1>
+    </header>
+    <main>
+        <form method="get" action="review.html">
+            <label for="select">Product Name</label>
+            <select name="product" id="select" required>
+                <option value="" disabled selected>Select a Product</option>
+            </select>
+            <fieldset class="radio">
+                <legend>Overall Rating</legend>
+                <div>
+                    <label for="star1">☆</label>
+                    <input type="radio" id="star1" name="rating" value="1" required>
+                </div>
+                <div>
+                    <label for="star2">☆☆</label>
+                    <input type="radio" id="star2" name="rating" value="2" required>
+                </div>
+                <div>
+                    <label for="star3">☆☆☆</label>
+                    <input type="radio" id="star3" name="rating" value="3" required>
+                </div>
+                <div>
+                    <label for="star4">☆☆☆☆</label>
+                    <input type="radio" id="star4" name="rating" value="4" required>
+                </div>
+                <div>
+                    <label for="star5">☆☆☆☆☆</label>
+                    <input type="radio" id="star5" name="rating" value="5" required>
+                </div>
+            </fieldset>
+            <label for="installdate">Date of Installation</label>
+            <input type="date" id="installdate" name="install" required>
+            <fieldset class="features">
+                <legend>What Features of the product did you find useful? Check all that apply</legend>
+                <div>
+                    <input type="checkbox" id="durability" name="durability" value="durability">
+                    <label for="durability">Durability</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="easeofuse" name="easeofuse" value="easeofuse">
+                    <label for="easeofuse">Ease of Use</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="performance" name="performance" value="performance">
+                    <label for="performance">Performance</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="design" name="design" value="design">
+                    <label for="design">Design</label>
+                </div>
+            </fieldset>
+            <label for="written">Written Review (Optional)</label>
+            <textarea name="review" id="written"></textarea>
+            <label for="name">Your Name (Optional)</label>
+            <input type="text" id="name" name="username">
+            <input type="submit" value="Post Review">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🐉 Ammon Griner 🐉 Tucson, Az</p>
+        <p><span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>

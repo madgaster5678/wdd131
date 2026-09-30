@@ -1,0 +1,100 @@
+:root {
+    --background-color: #f65026;
+    --text-color: #000;
+    --form-background: lightgray;
+}
+
+body {
+    font-family: "Google Sans", sans-serif;
+}
+
+header, footer {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    padding: 1rem;
+    margin: 1rem auto;
+    text-align: center;
+    max-width: 600px;
+}
+
+form {
+    background-color: var(--form-background);
+    padding: 1rem;
+    margin: 1rem auto;
+    max-width: 600px;
+}
+
+input, select, textarea {
+    width: 100%;
+    border-radius: 6px;
+    padding: 5px;
+}
+
+select {
+    padding: 10px;
+    
+}
+
+fieldset {
+    border: none;
+    padding: 15px;
+    margin-top: 10px;
+}
+
+
+.radio {
+    display: flex;
+    justify-content: space-around;
+}
+
+.radio div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#installdate, #name, textarea {
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+textarea {
+    height: 150px;
+}
+
+input[type="checkbox"] {
+    width: auto;
+}
+
+.features label, .features input {
+    display: block;
+}
+
+.features {
+    display: flex;
+    flex-direction: column;
+}
+
+.features div {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#name {
+    margin-bottom: 10px;
+}
+
+input[type="submit"] {
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.review main {
+    max-width: 600px;
+    margin: 1rem auto;
+    padding: 1rem;
+    text-align: center;
+}
