@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us | Void Core Game Design</title>
+    <meta name="description" content="This is the contact page for my final project. It contains the contact info and a form to join the membership chat.">
+    <meta name="author" content="Ammon Griner">
+    <link rel="stylesheet" href="styles/final-small.css">
+    <link rel="stylesheet" href="styles/final-large.css">
+    <script src="scripts/final-contact.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Google+Sans:ital,opsz,wght@0,17..18,400..700;1,17..18,400..700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Void Core Game Design</h1>
+        <img src="images/void-core-game-logo.svg" alt="Company logo">
+        <button id="menu-button">☰</button>
+        <nav>
+            <ul id="menu" class="menu-hidden">
+                <li><a href="final-project-home.html">Home</a></li>
+                <li><a href="final-about-us.html">About Us</a></li>
+                <li><a href="final-contact-us.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Contact Us</h2>
+            <p>Void Core has many ways to contact us. The main email that will get you a response is <a href="mailto:VoidCoreDevelopment@gmail.com">VoidCoreDevelopment@gmail.com</a>. If you need to contact me and my friends directly, our emails are <a href="mailto:apgriner@comcast.net">apgriner@comcast.net</a> and <a href="mailto:DMCWorkarounds@gmail.com">DMCWorkarounds@gmail.com</a> respectively.</p>
+        </section>
+        <form method="get" action="final-thanks.html" class="ft1">
+            <fieldset>
+                <legend>Contact Information</legend>
+                <label for="name">Name or Username:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+            <label for="reason">Reason(s) for Joining Us:</label>
+            <textarea name="reasonforjoining" id="reason" required></textarea>
+            <fieldset>
+                <legend>About Your Game(Optional)</legend>
+                <label for="gname">Game Name:</label>
+                <input type="text" id="gname" name="game-name">
+                <label for="gdescription">Game Description:</label>
+                <textarea name="game-description" id="gdescription"></textarea>
+            </fieldset>
+            <input type="submit" value="Join the Community">
+        </form>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🐉 Ammon Griner 🐉 Tucson, Az</p>
+        <p><span id="lastmodified"></span></p>
+    </footer>
+</body>
+</html>
