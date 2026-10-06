@@ -1,0 +1,25 @@
+@media (min-width: 740px) {
+    header {
+        padding: 1.5rem;
+    }
+
+    header img {
+        width: 200px;
+    }
+
+    body.home main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+    }
+
+    body.home main section:first-child {
+        grid-column: 1/3;
+    }
+
+    body.home main section:nth-child(2) {
+        grid-row: 2 / 4;
+    }
+
+
+}
