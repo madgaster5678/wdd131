@@ -48,15 +48,15 @@ body {
     background-color: var(--background-color);
 }
 
-main section:first-child {
+body.home main section:first-child {
     position: relative;
 }
 
-main section:first-child img {
+body.home main section:first-child img {
     width: 100%;
 }
 
-main section:first-child h2 {
+body.home main section:first-child h2 {
     position: absolute;
     top: 20%;
     left: 10%;
@@ -65,7 +65,7 @@ main section:first-child h2 {
 
 }
 
-main section:first-child p {
+body.home main section:first-child p {
     background-color: rgba(246, 80, 38, 0.7);
     position: absolute;
     top: 45%;
@@ -74,23 +74,23 @@ main section:first-child p {
     padding: 1rem;
 }
 
-main section:not(:first-child) {
+body.home main section:not(:first-child) {
     padding: 1rem 10%;
     text-align: center;
     padding-top: 10%;
     background-color: var(--background-color);
 }
 
-main section:not(:first-child) h2 {
+body.home main section:not(:first-child) h2 {
     margin: 0 10% 1rem;
 }
 
-main section:not(:first-child) li {
+body.home main section:not(:first-child) li {
     margin-bottom: 0.75rem;
     text-align: left;
 }
 
-main section:not(:first-child) ul {
+body.home main section:not(:first-child) ul {
     padding-left: 1.5rem;
 }
 
@@ -103,6 +103,107 @@ body.thanks main {
 
 body.home main section:not(:first-child) p {
     margin-bottom: 1rem;
+}
+
+body.contact main {
+    padding: 1rem;
+}
+
+body.contact main section {
+    padding: 1rem;
+    text-align: center;
+}
+
+body.contact main section h2 {
+    margin-bottom: 1rem;
+}
+
+body.contact main section a {
+    text-decoration: none;
+}
+
+body.contact main section a:hover {
+    color: var(--secondary-color);
+}
+
+body.contact form.ft1 {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: white;
+    padding: 1rem;
+}
+
+body.contact form.ft1 fieldset {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    border: 1px solid var(--primary-color);
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+body.contact form.ft1 div {
+    display: grid;
+}
+
+body.contact form.ft1 input,
+body.contact form.ft1 textarea {
+    width: 100%;
+    border-radius: 6px;
+    padding: 0.5rem;
+}
+
+body.contact form.ft1 input {
+    height: 44px;
+}
+
+body.contact form.ft1 textarea {
+    height: 6rem;
+}
+
+body.contact form.ft1 legend {
+    font-family: var(--header-font);
+    font-size: 1.25rem;
+    background-color: var(--primary-color);
+    padding: 0.5rem 1rem;
+}
+
+body.contact form.ft1 > div {
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+}
+
+body.contact form.ft1 > input[type="submit"] {
+    margin-top: 1rem;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    border: none;
+    padding: 0 1rem;
+}
+
+body.contact form.ft1 input:required:invalid {
+    border: 2px solid red;
+}
+
+body.contact form.ft1 input:required:valid {
+    border: 2px solid green;
+}
+
+body.contact form.ft1 textarea:required:invalid {
+    border: 2px solid red;
+}
+
+body.contact form.ft1 textarea:required:valid {
+    border: 2px solid green;
+}
+
+body.contact form.ft1 > input[type="submit"]:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+body.contact form.ft1 label {
+    font-weight: bold;
 }
 
 #menu-button {

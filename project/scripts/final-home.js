@@ -9,3 +9,19 @@ menuButton.addEventListener("click", () => {menu.classList.toggle("menu-hidden")
 } else {
     menuButton.textContent = "✕";
 }});
+
+let communityCount = localStorage.getItem("communityCount");
+if (communityCount === null) {
+    communityCount = 0;
+}
+
+
+const params = new URLSearchParams(window.location.search);
+const name = params.get("name");
+const submissionCounted = localStorage.getItem("submissionCounted");
+if (name  && submissionCounted !== name) {
+    communityCount++;
+    localStorage.setItem("submissionCounted", name);
+}
+localStorage.setItem("communityCount", communityCount);
+document.getElementById("community-count").textContent = `We currently have ${communityCount} members with us.`

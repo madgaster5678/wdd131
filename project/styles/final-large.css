@@ -21,5 +21,13 @@
         grid-row: 2 / 4;
     }
 
+    body.contact form.ft1 {
+        max-width: 800px;
+        margin: 0 auto;
+    }
 
+    body.contact main section {
+        max-width: 800px;
+        margin: 0 auto;
+    }
 }
