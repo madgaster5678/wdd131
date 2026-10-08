@@ -16,10 +16,12 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 </head>
-<body>
+<body class="about">
     <header>
-        <h1>Void Core Game Design</h1>
-        <img src="images/void-core-game-logo.svg" alt="Company logo">
+        <div>
+            <h1>Void Core Game Design</h1>
+            <img src="images/void-core-game-logo.svg" alt="Company logo">
+        </div>
         <button id="menu-button">☰</button>
         <nav>
             <ul id="menu" class="menu-hidden">
@@ -37,7 +39,18 @@
         <section>
             <h2>Games That Used Our Resources</h2>
             <p>As said before, many indie developers have used some of our resources when making their games. Here are some of them and the developers who made them.</p>
-            <div id="game-container"></div>
+            <nav>
+                <ul>
+                    <li><a href="#" class="all">All</a></li>
+                    <li><a href="#" class="older">Older</a></li>
+                    <li><a href="#" class="newer">Newer</a></li>
+                    <li><a href="#" class="two-d-platform">2D platformers</a></li>
+                    <li><a href="#" class="beat-em-up">Beat em Up</a></li>
+                </ul>
+            </nav>
+            <div id="game-container">
+
+            </div>
         </section>
         <section>
             <h2>Our Community</h2>
@@ -45,6 +58,7 @@
         </section>
         <section>
             <h2>Want To Join Our Community?</h2>
+            
             <p>We are always welcoming to new developers that need help in their journey of game development. Join us through the link below.</p>
             <a href="final-contact-us.html">Contact Us</a>
         </section>
@@ -52,6 +66,7 @@
     <footer>
         <p>&copy;<span id="currentyear"></span> 🐉 Ammon Griner 🐉 Tucson, Az</p>
         <p><span id="lastmodified"></span></p>
+        <a href="final-references.html">References</a>
     </footer>
 </body>
 </html>

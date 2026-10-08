@@ -24,4 +24,8 @@ if (name  && submissionCounted !== name) {
     localStorage.setItem("submissionCounted", name);
 }
 localStorage.setItem("communityCount", communityCount);
-document.getElementById("community-count").textContent = `We currently have ${communityCount} members with us.`
+const communityDisplay = document.getElementById("community-count");
+
+if (communityDisplay) {
+    communityDisplay.textContent = `We currently have ${communityCount} members with us.`;
+}

@@ -119,7 +119,7 @@ body.contact main section h2 {
 }
 
 body.contact main section a {
-    text-decoration: none;
+    text-decoration: underline;
 }
 
 body.contact main section a:hover {
@@ -203,6 +203,61 @@ body.contact form.ft1 > input[type="submit"]:hover {
 }
 
 body.contact form.ft1 label {
+    font-weight: bold;
+}
+
+.about section {
+    text-align: center;
+}
+
+.about section a {
+    text-decoration: none;
+    font-weight: bold;
+    color: blue;
+}
+
+.about section a:hover {
+    color: var(--secondary-color);
+}
+
+.about section nav ul {
+    display: flex;
+    justify-content: space-evenly;
+    
+}
+
+.about section nav {
+    margin-top: 1rem;
+}
+
+body.about main {
+    padding: 2rem 10%;
+    background-color: var(--background-color);
+    font-size: large;
+}
+
+#game-container {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#game-container img {
+    max-width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#game-container article {
+    margin: 1rem;
+}
+
+#game-container h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+#game-container article p {
+    font-size: 1.1rem;
     font-weight: bold;
 }
 
